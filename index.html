@@ -1,6 +1,108 @@
-<html>
-<head></head>
-<body>
-Hello, world!
-</body>
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>software-joe</title>
+
+		<!-- Required metatags -->
+		<meta charset="UTF-8">
+		<!-- Mobile responsive -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<!-- Font Awesome Icons CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+
+		<!-- Style -->
+		<link rel="stylesheet" href="style.css">
+
+		<!-- Google Font -->
+		<link href = "https:fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- JavaScripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="form.js"></script>
+
+	</head>
+
+	<body data-spy="scroll" data-target="#main-navbar" data-offset="50">
+		<!-- Navigation Bar -->
+		<div class="container">
+			<header class="row">
+				<nav class="navbar navbar-right navbar-expand-lg fixed-top navbar-light bg-light justify-content-end" id="main-navbar">
+					<div class="navbar-header">
+<!--						<a class="navbar-brand" href="#">WebSiteName</a>-->
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+					<div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<div class ="nav nav-pills">
+								<a class="nav-item nav-link" href="#about">About</a>
+								<a class="nav-item nav-link" href="#work">Work</a>
+								<a class="nav-item nav-link" href="#contact">Contact</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</header>
+		</div>
+
+		<!-- ABOUT -->
+		<section id="about" class="container-fluid">
+			<div class="about-content">
+				<span id="hello-message">Hi, I am <strong>Joseph</strong>.</span>
+				<br>
+				<span id="job-title">a <i>Software Developer</i></span>
+			</div>
+		</section>
+
+		<!-- WORK -->
+		<section id="work" class="container-fluid">
+			<div class="work-content">
+				<span id="work-message">Some of my projects</span>
+				<!-- Add 2x3 grid for projects -->
+			</div>
+		</section>
+
+		<!-- CONTACT -->
+		<!-- Serverless Framework Contact Form -->
+		<!-- AWS Lambda -->
+		<section id="contact" class="container-fluid">
+			<div class="contact-content">
+				<span id="contact-message">Let's work together...</span>
+				<div>
+					<!-- Add github, linkedin links -->
+					<i class="fab fa-github"></i>
+				</div>
+				<form action="https://5l91lv8rlb.execute-api.us-east-1.amazonaws.com/dev/static-site-mailer" method="POST">
+					<label id="name-label">
+						<input placeholder="Name" type="text" id="name" name="name" required>
+					</label>
+					<label id="email-label">
+						<input placeholder="Email" type="email" id="email" name="email" required>
+					</label>
+					<label id="message-label">
+						<textarea placeholder="Your message" type="text" id="message" name="message" required></textarea>
+					</label>
+					<button type="submit" id="submit" class="btn btn-dark">Send Message</button>
+				</form>
+				<p id="js-form-response"></p>
+			</div>
+		</section>
+
+		<!-- FOOTER -->
+		<footer>
+			<div class="info-box">
+				<div class="footnote">
+					<span>JOSEPH FERNANDEZ <span class="highlight">©2019</span></span>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
