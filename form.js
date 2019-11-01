@@ -3,7 +3,6 @@
 (() => {
   const form = document.querySelector('form');
   const formResponse = document.getElementById('js-form-response');
-  console.log(formResponse);
 
   form.onsubmit = e => {
     e.preventDefault();
@@ -14,7 +13,7 @@
     formElements.map(input => (data[input.name] = input.value));
 
     // Log what our lambda function will receive
-    console.log(JSON.stringify(data));
+    // console.log(JSON.stringify(data));
 
     // Construct an HTTP request
     var xhr = new XMLHttpRequest();
