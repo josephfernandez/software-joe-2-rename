@@ -64,45 +64,53 @@
 		</section>
 
 		<!-- WORK -->
-		<section id="work" class="container-fluid">
+		<section id="work" class="container-fluid" style="display:inherit;">
 			<div class="work-content">
-				<span id="work-message">Some of my projects</span>
-				<!-- Add 2x3 grid for projects -->
+				<header style="margin: 0px auto 50px;font-size:45px;color:white;">My Projects</header>
+				<ul style="padding-inline-start:0;">
+					<li style="list-style-type: none;border:1px dotted yellow;background-color:white;">
+						<span style="font-size:38px;color:#673ab7;">Reddit Clone</span>
+						<a style="text-decoration:none;color:#673ab7;float: right;padding-right: 10px;padding-top: 10px;font-size: 30px;" class="fab fa-github" href="http://www.github.com/josephfernandez/reddit_clone"></a>
+						<a style="text-decoration:none;color:#64ad6a;margin-left:10px; padding-right: 10px;padding-top: 10px;font-size: 30px;" class="fas fa-play" href="https://grisly-castle-67390.herokuapp.com"></a>
+						<p style="font-size:24px;">A MEAN stack application which mimics some features of Reddit.com</p>
+					</li>
+				</ul>
 			</div>
 		</section>
 
-		<!-- CONTACT -->
-		<!-- Serverless Framework Contact Form -->
-		<!-- AWS Lambda -->
-		<section id="contact" class="container-fluid">
-			<div class="contact-content">
-				<span id="contact-message">Let's work together...</span>
-				<div class="row justify-content-center">
-					<!-- Add github, linkedin links -->
-					<a class="col-4" style="color:black;" href="http://www.github.com/josephfernandez" target="_blank">
-						<span class="fab fa-github"></span>
-					</a>
-					<a class="col-4" href="http://linkedin.com/in/jfernandez1988" target="_blank">
-						<span class="fab fa-linkedin-in"></span>
-					</a>
 
-				</div>
-				<form action="https://6um790i2v2.execute-api.us-west-2.amazonaws.com/default/my-function/contact-us" method="POST">
-					<label id="name-label">
-						<input placeholder="Name" type="text" id="name" name="name" required>
-					</label>
-					<label id="email-label">
-						<input placeholder="Email" type="email" id="email" name="email" required>
-					</label>
-					<label id="message-label">
-						<textarea placeholder="Your message" type="text" id="message" name="message" required></textarea>
-					</label>
-					<button type="submit" id="submit" class="btn btn-dark">Send Message</button>
-				</form>
-				<p id="js-form-response"></p>
-				<script src="form.js"></script>
-			</div>
-		</section>
+				<!-- CONTACT -->
+				<!-- Serverless Framework Contact Form -->
+				<!-- AWS Lambda -->
+				<section id="contact" class="container-fluid">
+					<div class="contact-content">
+						<span id="contact-message">Let's work together...</span>
+						<div class="row justify-content-center">
+							<!-- Add github, linkedin links -->
+							<a class="col-4" style="color:black;" href="http://www.github.com/josephfernandez" target="_blank">
+								<span class="fab fa-github"></span>
+							</a>
+							<a class="col-4" href="http://linkedin.com/in/jfernandez1988" target="_blank">
+								<span class="fab fa-linkedin-in"></span>
+							</a>
+
+						</div>
+						<form action="https://6um790i2v2.execute-api.us-west-2.amazonaws.com/default/my-function/contact-us" method="POST">
+							<label id="name-label">
+								<input placeholder="Name" type="text" id="name" name="name" required>
+							</label>
+							<label id="email-label">
+								<input placeholder="Email" type="email" id="email" name="email" required>
+							</label>
+							<label id="message-label">
+								<textarea placeholder="Your message" type="text" id="message" name="message" required></textarea>
+							</label>
+							<button type="submit" id="submit" class="btn btn-dark">Send Message</button>
+						</form>
+						<p id="js-form-response"></p>
+						<script src="form.js"></script>
+					</div>
+				</section>
 
 		<!-- FOOTER -->
 		<footer>
